@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .box{
+        height: 100px;
+        width: 100px;
+        border-radius: 4px;
+        transform: translateY(0px);
+        background-color: pink;
+       /* border: 10px dotted black;*/
+       /* margin: auto;
+        margin-top: 100px;*/
+        animation-name: loader;
+        animation-duration: 3s;
+      /* animation-delay: 5s;*/
+       /*animation-iteration-count: infinite;*/
+      /* animation-fill-mode: backwards;*/
+     /* animation-direction: alternate;*/
+      margin: 2px;
+      }
+      .box:hover{
+        animation-play-state: paused;
+      }
+      @keyframes loader {
+      0% {
+      transform: translateY(0px);
+      }
+      25% {
+        transform: translateY(300px);
+      }
+     50% {
+        transform: translateX(300px) translateY(300px);
+      }
+      75% {
+        transform: translateX(300px) translateY(0px);
+      }
+     100% {
+        transform: translateX(0px) translateY(0px);
+       
+      }
+      /*100% {
+        transform: translateX(600px);
+      }*/
+      }
+   
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+   <div class="box"></div>
+</body>
+</html>
